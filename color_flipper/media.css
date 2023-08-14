@@ -1,0 +1,5 @@
+@media screen and (max-width: 520px) {
+    .container h2 {
+        width: 80%;
+    }
+}
