@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+   body {
+    text-align: center;
+    background-color: rgb(180, 164, 196);
+   }
+    h1 {
+        font-size: 40px;
+        color: yellow;
+    }
+    span {
+        font-size: 120px;
+        font-weight: bold;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        background-color: aqua;
+        color: rgb(61, 56, 56);
+        border: none;
+        box-shadow: 0px 0px 5px 2px chartreuse;
+        margin: 10px;
+        margin-top: 25px;
+    }
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgba(0, 255, 255, 0.726);
+    }
+    .btn:active {
+        background-color: rgb(52, 161, 194);
+    }
+</style>
+<body>
+    <h1>Counter</h1>
+    <span id="value">0</span>
+    <div class="button__container">
+        <button class="btn decrease" data-action="decrease">decrease</button>
+        <button class="btn reset" data-action="reset">reset</button>
+        <button class="btn increase" data-action="increase">increase</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
