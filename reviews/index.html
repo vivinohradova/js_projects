@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a810ecbedd.js" crossorigin="anonymous"></script>
+    <title>Starter</title>
+</head>
+<style>
+    body {
+        background: rgb(102, 102, 128);
+    }
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .review {
+        width: 400px;
+        text-align: center;
+        box-shadow: 2px 2px 10px black;
+        padding: 20px;
+        height: 480px;
+        background: rgb(198, 198, 214);
+    }
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    p {
+        height: 190px;
+    }
+    button {
+        border: none;
+        background-color: rgb(119, 102, 158);
+        box-shadow: 1px 1px 5px black;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .prev-btn,
+    .next-btn {
+        width: 38px;
+        height: 20px;
+    }
+    .random-btn {
+        width: 90px;
+        height: 20px;
+        color: aliceblue;
+    }
+    i {
+        color: aliceblue;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+    button:active {
+        box-shadow: 1px 1px 5px inset black;
+    }
+
+</style>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="title">
+                <h2>Our reviews</h2>
+                <div class="underline"></div>
+            </div>
+
+            <article class="review">
+                <div class="img-container">
+                    <img src="./cake-1.jpg" id="cake-img" alt="cake">
+                </div>
+                <h4 id="name-cake">Blueberry cake</h4>
+                <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Animi aliquid, impedit similique dolor fugit unde libero quis vel
+                    distinctio blanditiis quaerat laboriosam nihil ad eius, nam dolorem dolorum, saepe dolores.
+                </p>
+
+                <div class="button-container">
+                    <button class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <button class="random-btn">Surprise me</button>
+            </article>
+        </section>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
